@@ -1,4 +1,5 @@
 import React from "react"
+import MainLayout from "./layout/MainLayout"
 
 
 
@@ -7,10 +8,7 @@ function App() {
 
   return (
     <>
-      <div>
-        <h1>hello</h1>
-      </div>
-        
+      <MainLayout/>  
     </>
   )
 }
