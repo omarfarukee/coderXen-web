@@ -25,7 +25,7 @@ export default function Navbar() {
 
     return (
         <div
-            className={`fixed w-full z-50 bg-transparent transition-all duration-300 animate__animated animate__fadeInUp ${scrolled ? "bg-transparent backdrop-blur-lg shadow-md" : ""
+            className={`fixed w-full z-50 bg-transparent transition-all duration-300 animate__animated animate__fadeInUp ${scrolled ? "bg-white shadow-md" : ""
                 }`}
         >
             <div className='flex items-center justify-between px-10 py-4 '>
@@ -38,7 +38,7 @@ export default function Navbar() {
                     />
                 </div>
                 {/* menu */}
-                <div className={`flex gap-5 text-[18px] transition-all duration-300 ${scrolled ? "text-[15px]" : ""}`}>
+                <div className={`flex gap-5 text-[18px] transition-all duration-300 ${scrolled ? "text-[14px]" : ""}`}>
                     <NavLink
                         to='/home'
                         className={({ isActive }) =>

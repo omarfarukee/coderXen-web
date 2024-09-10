@@ -1,6 +1,23 @@
 
 .font-transition {
     transition: font-size 0.4s ease-in-out;
-    /* color: #00000080; */
   }
   
+/* arrow animated start  */
+@keyframes upDown {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.animate-arrow {
+  animation: upDown 2s ease-in-out infinite;
+}
+
+/* arrow animated end */

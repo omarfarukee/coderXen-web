@@ -11,6 +11,7 @@ import {
 } from "react-icon-cloud";
 import React from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
     style: {
@@ -38,6 +39,7 @@ export const cloudProps: Omit<ICloud, "children"> = {
   },
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
   const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
   const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
@@ -82,6 +84,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   }, [data, theme]);
 
   return (
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
 
     <Cloud {...cloudProps}>

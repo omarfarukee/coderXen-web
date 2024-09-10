@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Loader from '../shared/loader/Loader';
 import Aos from 'aos';
+import Meteors from '../components/Meteors';
 
 export default function AboutUs() {
   const [loading, setLoading] = useState(true);
@@ -28,7 +29,15 @@ export default function AboutUs() {
 }
   return (
     <div>
-      <h1>hello this is about us page</h1>
+     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+      <Meteors number={30} />
+      <span className="font-semibold leading-none text-center text-transparent whitespace-pre-wrap pointer-events-none bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-8xl dark:from-white dark:to-slate-900/10">
+        About us
+      </span>
+    </div>
+    <div>
+      <img src="https://wiatechnextjs.vercel.app/assets/images/page/circel.png" className='' alt="" />
+    </div>
     </div>
   )
 }

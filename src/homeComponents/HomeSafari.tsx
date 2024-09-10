@@ -1,6 +1,6 @@
 import React from 'react';
 import Safari from '../components/SafariDemo';
-
+import ss from "../assets/images/overview.png"
 
 const HomeSafari = () => {
     return (
@@ -9,7 +9,7 @@ const HomeSafari = () => {
         <Safari
           url="CoderXen"
           className="size-full"
-          src="https://present.readthedocs.io/en/latest/_images/welcome-to-coding.gif"
+          src={ss}
         />
       </div>
     </div>
